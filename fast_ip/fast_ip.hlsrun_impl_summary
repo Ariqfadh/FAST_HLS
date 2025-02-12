@@ -1,0 +1,269 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\fast_ip.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/09/25 15:23:17",
+ "timestampMillis": "1739089397465",
+ "buildStep": {
+  "cmdId": "be3e4ce9-d3b9-4058-adb9-a0705d0ef24b",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\logs\\fast_ip.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\hls_config.cfg --work_dir fast_ip ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\hls_config.cfg",
+   "--work_dir",
+   "fast_ip"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 15:23:17",
+ "timestampMillis": "1739089397466",
+ "status": {
+  "cmdId": "be3e4ce9-d3b9-4058-adb9-a0705d0ef24b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401096",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fast_ip",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip.cpp",
+     "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401097",
+ "buildStep": {
+  "cmdId": "0a604d12-0aa3-47fa-a9de-2a6995dc80b2",
+  "name": "",
+  "logFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401098",
+ "status": {
+  "cmdId": "0a604d12-0aa3-47fa-a9de-2a6995dc80b2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401105",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401105",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401106",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401108",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401108",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:23:21",
+ "timestampMillis": "1739089401109",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636125",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636125",
+ "report": {
+  "path": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636126",
+ "status": {
+  "cmdId": "0a604d12-0aa3-47fa-a9de-2a6995dc80b2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636243",
+ "status": {
+  "cmdId": "be3e4ce9-d3b9-4058-adb9-a0705d0ef24b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636244",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 15:27:16",
+ "timestampMillis": "1739089636244",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\fast_ip.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/09/25 14:55:04",
+ "timestampMillis": "1739087704117",
+ "buildStep": {
+  "cmdId": "61770b31-e5de-4a00-b3d6-3d3a7651a04c",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\logs\\fast_ip.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\hls_config.cfg --work_dir fast_ip ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\hls_config.cfg",
+   "--work_dir",
+   "fast_ip"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 14:55:04",
+ "timestampMillis": "1739087704117",
+ "status": {
+  "cmdId": "61770b31-e5de-4a00-b3d6-3d3a7651a04c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/09/25 14:55:07",
+ "timestampMillis": "1739087707921",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fast_ip",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip.cpp",
+     "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/09/25 14:55:07",
+ "timestampMillis": "1739087707922",
+ "buildStep": {
+  "cmdId": "eef5cbf7-0ca1-42dd-8bf3-54bd5ff9f18c",
+  "name": "",
+  "logFile": "C:/Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip\\fast_ip\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 14:55:07",
+ "timestampMillis": "1739087707922",
+ "status": {
+  "cmdId": "eef5cbf7-0ca1-42dd-8bf3-54bd5ff9f18c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 14:55:13",
+ "timestampMillis": "1739087713372",
+ "status": {
+  "cmdId": "eef5cbf7-0ca1-42dd-8bf3-54bd5ff9f18c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/09/25 14:55:13",
+ "timestampMillis": "1739087713479",
+ "status": {
+  "cmdId": "61770b31-e5de-4a00-b3d6-3d3a7651a04c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 14:55:13",
+ "timestampMillis": "1739087713480",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/09/25 14:55:13",
+ "timestampMillis": "1739087713481",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

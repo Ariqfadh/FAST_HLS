@@ -1,0 +1,822 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Feb  9 15:23:53 2025
+# Process ID         : 8224
+# Current directory  : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : Ariqfadhh
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 21168 MB
+# Swap memory        : 3517 MB
+# Total Virtual      : 24686 MB
+# Available Virtual  : 6909 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 56156
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12308
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1079.348 ; gain = 467.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.dat' is read successfully [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp.v:7]
+INFO: [Synth 8-3876] $readmem data file './fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp.dat' is read successfully [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized0' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized0' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized1' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized1' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized2' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized2' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized3' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized3' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized4' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized4' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized5' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_sparsemux_33_4_8_1_1__parameterized5' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_sparsemux_33_4_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_flow_control_loop_pipe_sequential_init' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_fast_ip_Pipeline_col_loop' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_fast_ip_Pipeline_col_loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_CONTROL_BUS_s_axi' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_CONTROL_BUS_s_axi.v:219]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_CONTROL_BUS_s_axi' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_regslice_both' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_regslice_both' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_regslice_both__parameterized0' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_regslice_both__parameterized0' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_ip_regslice_both__parameterized1' [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip_regslice_both__parameterized1' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_ip' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/9c9f/hdl/verilog/fast_ip_CONTROL_BUS_s_axi.v:288]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port AWADDR[1] in module fast_ip_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module fast_ip_CONTROL_BUS_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[31] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[30] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[29] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[28] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[27] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[26] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[25] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[24] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[23] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[22] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[21] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[20] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[19] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[18] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[17] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[16] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[15] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[14] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[13] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[12] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[11] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[10] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[9] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[8] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[3] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[2] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[1] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[3] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[2] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[1] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TLAST[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.227 ; gain = 635.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.227 ; gain = 635.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.227 ; gain = 635.426
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1247.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fast_ip_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fast_ip_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1306.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1306.625 ; gain = 0.035
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.625 ; gain = 694.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.625 ; gain = 694.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1306.625 ; gain = 694.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'fast_ip_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'fast_ip_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fast_ip_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fast_ip_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fast_ip_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'fast_ip_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'fast_ip_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fast_ip_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fast_ip_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fast_ip_regslice_both__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1306.625 ; gain = 694.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 14    
+	               31 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 214   
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 12    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 83    
++---RAMs : 
+	              960 Bit	(120 X 8 bit)          RAMs := 112   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   3 Input    7 Bit        Muxes := 24    
+	   2 Input    7 Bit        Muxes := 40    
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 81    
+	   4 Input    2 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 36    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port src_axi_TDATA[31] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[30] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[29] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[28] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[27] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[26] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[25] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[24] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[23] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[22] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[21] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[20] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[19] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[18] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[17] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[16] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[15] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[14] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[13] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[12] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[11] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[10] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[9] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TDATA[8] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[3] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[2] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[1] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TKEEP[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[3] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[2] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[1] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TSTRB[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_axi_TLAST[0] in module fast_ip_fast_ip_Pipeline_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_AWADDR[1] in module fast_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_CONTROL_BUS_AWADDR[0] in module fast_ip is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (CONTROL_BUS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (CONTROL_BUS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_keep_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_keep_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_strb_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_strb_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module fast_ip.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_src_axi_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module fast_ip.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1317.277 ; gain = 705.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                               | RTL Object                                                                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U/ram_reg     | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_55_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_54_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_53_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_52_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_51_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_50_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_49_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_48_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_61_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_60_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_59_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_58_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_57_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_56_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_79_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_78_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_71_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_70_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_69_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_68_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_67_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_66_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_65_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_64_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_77_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_76_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_75_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_74_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_73_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_72_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_95_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_87_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_86_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_85_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_84_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_82_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_81_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_92_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_91_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_89_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_88_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_111_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_112_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_119_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_120_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_121_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_122_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_99_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_98_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_97_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_96_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_113_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_114_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_115_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_116_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_117_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_118_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1412.488 ; gain = 800.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:33 . Memory (MB): peak = 1492.266 ; gain = 880.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                               | RTL Object                                                                                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U/ram_reg     | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U/ram_reg   | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_55_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_54_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_53_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_52_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_51_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_50_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_49_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_48_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_61_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_60_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_59_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_58_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_57_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_56_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_79_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_78_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_71_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_70_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_69_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_68_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_67_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_66_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_65_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_64_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_77_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_76_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_75_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_74_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_73_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_72_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_95_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_87_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_86_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_85_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_84_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_82_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_81_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_92_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_91_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_89_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_88_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R | 120 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_111_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_112_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_119_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_120_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_121_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_122_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_99_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_98_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_97_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_96_U/ram_reg  | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_113_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_114_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_115_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_116_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_117_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst/grp_fast_ip_Pipeline_col_loop_fu_328 | p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_118_U/ram_reg | 120 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------------------------------------+-------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:34 . Memory (MB): peak = 1505.688 ; gain = 893.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:37 . Memory (MB): peak = 1650.008 ; gain = 1038.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:37 . Memory (MB): peak = 1650.008 ; gain = 1038.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1650.008 ; gain = 1038.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1650.008 ; gain = 1038.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1656.945 ; gain = 1045.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1656.945 ; gain = 1045.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fast_ip     | grp_fast_ip_Pipeline_col_loop_fu_328/icmp_ln42_1_reg_7907_pp0_iter3_reg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|fast_ip     | grp_fast_ip_Pipeline_col_loop_fu_328/icmp_ln42_reg_7902_pp0_iter3_reg_reg[0]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_ip     | grp_fast_ip_Pipeline_col_loop_fu_328/mask_last_reg_7917_pp0_iter3_reg_reg[0]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_ip     | grp_fast_ip_Pipeline_col_loop_fu_328/ap_loop_exit_ready_pp0_iter3_reg_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   106|
+|2     |LUT1     |   126|
+|3     |LUT2     |    38|
+|4     |LUT3     |   155|
+|5     |LUT4     |   386|
+|6     |LUT5     |    63|
+|7     |LUT6     |  1106|
+|8     |MUXF7    |   258|
+|9     |MUXF8    |   128|
+|10    |RAMB18E1 |   112|
+|12    |SRL16E   |     4|
+|13    |FDRE     |   649|
+|14    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1656.945 ; gain = 1045.145
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:36 . Memory (MB): peak = 1656.945 ; gain = 985.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 1656.945 ; gain = 1045.145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1666.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 604 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1669.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a73186b1
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 1669.734 ; gain = 1287.695
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1669.734 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 909ff44a74efb5af
+INFO: [Coretcl 2-1174] Renamed 121 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1669.734 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 15:24:43 2025...

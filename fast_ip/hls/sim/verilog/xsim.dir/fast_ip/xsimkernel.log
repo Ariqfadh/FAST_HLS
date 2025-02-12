@@ -1,0 +1,7 @@
+Running: xsim.dir/fast_ip/xsimk.exe -simmode gui -wdb fast_ip.wdb -simrunnum 0 -socket 56145
+Design successfully loaded
+Design Loading Memory Usage: 35488 KB (Peak: 35488 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 125128 KB (Peak: 125128 KB)
+Simulation CPU Usage: 4968 ms

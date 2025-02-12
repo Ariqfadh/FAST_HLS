@@ -1,0 +1,418 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Sun Feb 09 15:27:15 +0700 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         fast_ip
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              1626
+FF:               657
+DSP:              0
+BRAM:             112
+URAM:             0
+SRL:              4
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 6.299       |
+| Post-Route     | 8.161       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++---------------------------------------------------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                                        | LUT  | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++---------------------------------------------------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                                        | 1626 | 657 |     | 112  |      |     |        |      |         |          |        |
+|   (inst)                                                                                    | 37   | 275 |     |      |      |     |        |      |         |          |        |
+|   CONTROL_BUS_s_axi_U                                                                       | 223  | 125 |     |      |      |     |        |      |         |          |        |
+|   grp_fast_ip_Pipeline_col_loop_fu_328                                                      | 1313 | 214 |     | 112  |      |     |        |      |         |          |        |
+|     (grp_fast_ip_Pipeline_col_loop_fu_328)                                                  | 71   | 212 |     |      |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_111_U | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_112_U | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_113_U | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_114_U | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_115_U | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_116_U | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_117_U | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_118_U | 10   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_119_U | 25   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_120_U | 18   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_121_U | 26   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_122_U | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U  | 15   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U   | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U  | 25   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U   | 21   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U  | 24   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U  | 16   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U   | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U  | 16   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_48_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_49_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U   | 15   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_50_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_51_U  | 16   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_52_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_53_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_54_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_55_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_56_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_57_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_58_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_59_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U   | 25   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_60_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_61_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U  |      |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U  | 16   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_64_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_65_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_66_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_67_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_68_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_69_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U   | 21   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_70_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_71_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_72_U  | 19   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_73_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_74_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_75_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_76_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_77_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_78_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_79_U  | 24   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U   | 25   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_81_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_82_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_84_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_85_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_86_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_87_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_88_U  | 18   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_89_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U   | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U  | 25   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_91_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_92_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U  | 1    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U  | 33   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_95_U  | 13   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_96_U  | 8    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_97_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_98_U  | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_99_U  | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U   | 17   |     |     | 1    |      |     |        |      |         |          |        |
+|     p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U     | 9    |     |     | 1    |      |     |        |      |         |          |        |
+|   regslice_both_dst_axi_V_data_V_U                                                          | 25   | 7   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_dst_axi_V_keep_V_U                                                          | 5    | 5   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_dst_axi_V_last_V_U                                                          | 5    | 5   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_dst_axi_V_strb_V_U                                                          | 5    | 5   |     |      |      |     |        |      |         |          |        |
+|   regslice_both_src_axi_V_data_V_U                                                          | 13   | 21  |     |      |      |     |        |      |         |          |        |
++---------------------------------------------------------------------------------------------+------+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 3.06%  | OK     |
+| FD                                                        | 50%       | 0.62%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.02%  | OK     |
+| MUXF7                                                     | 15%       | 0.97%  | OK     |
+| DSP                                                       | 80%       | 0.00%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 40.00% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 40.00% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 15     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.08   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                                                                                | ENDPOINT PIN                                                                                                                                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                                                                               |                                                                                                                                              |              |            |                |          DELAY |        DELAY |
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 1.839 | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]/C                                                                                 | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]/D                                                                        |            4 |         32 |          7.927 |          1.958 |        5.969 |
+| Path2 | 1.852 | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]/C                                                                                 | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]/D                                                                         |            4 |         32 |          7.914 |          2.028 |        5.886 |
+| Path3 | 1.912 | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg/CLKARDCLK  | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg/DIADI[3] |            3 |         16 |          7.568 |          2.917 |        4.651 |
+| Path4 | 1.925 | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg/CLKARDCLK | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg/DIADI[7] |            3 |         16 |          7.555 |          2.917 |        4.638 |
+| Path5 | 1.966 | threshold_read_reg_659_reg[1]/C                                                                                                               | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]/D                                                                          |            4 |         32 |          7.752 |          2.071 |        5.681 |
++-------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                                                                   | Primitive Type       |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970[0]_i_8     | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]                                                                                           | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662[0]_i_8      | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662_reg[0]_i_1  | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]                                                                                            | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg                            | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_55__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_31__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_14__5                    | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_39__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_23__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_10__10                   | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | threshold_read_reg_659_reg[1]                                                                                                                                 | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981[0]_i_18                                                                                            | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]_i_11                                                                                        | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981[0]_i_8       | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981_reg[0]_i_1   | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]                                                                                             | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                                                                   | Primitive Type       |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970[0]_i_8     | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]                                                                                           | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662[0]_i_8      | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662_reg[0]_i_1  | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]                                                                                            | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg                            | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_55__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_31__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_14__5                    | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_39__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_23__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_10__10                   | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | threshold_read_reg_659_reg[1]                                                                                                                                 | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981[0]_i_18                                                                                            | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]_i_11                                                                                        | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981[0]_i_8       | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981_reg[0]_i_1   | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]                                                                                             | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                                                                   | Primitive Type       |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970[0]_i_8     | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]                                                                                           | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662[0]_i_8      | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662_reg[0]_i_1  | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]                                                                                            | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg                            | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_55__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_31__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_14__5                    | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_39__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_23__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_10__10                   | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | threshold_read_reg_659_reg[1]                                                                                                                                 | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981[0]_i_18                                                                                            | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]_i_11                                                                                        | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981[0]_i_8       | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981_reg[0]_i_1   | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]                                                                                             | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                                                                   | Primitive Type       |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970[0]_i_8     | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]                                                                                           | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662[0]_i_8      | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662_reg[0]_i_1  | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]                                                                                            | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg                            | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_55__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_31__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_14__5                    | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_39__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_23__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_10__10                   | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | threshold_read_reg_659_reg[1]                                                                                                                                 | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981[0]_i_18                                                                                            | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]_i_11                                                                                        | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981[0]_i_8       | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981_reg[0]_i_1   | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]                                                                                             | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                                                                   | Primitive Type       |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970[0]_i_8     | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/bright_cont_30_reg_9970_reg[0]_i_1 | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_30_reg_9970_reg[0]                                                                                           | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/center_reg_8514_reg[0]                                                                                                   | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706[0]_i_37                                                                                           | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_6_reg_9706_reg[0]_i_16                                                                                       | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662[0]_i_8      | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U/bright_cont_2_reg_9662_reg[0]_i_1  | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_2_reg_9662_reg[0]                                                                                            | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg                            | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_55__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_31__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_14__5                    | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_39__4                    | LUT.others.LUT6      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_23__4                    | MUXFX.others.MUXF7   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U/ram_reg_i_10__10                   | MUXFX.others.MUXF8   |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U/ram_reg                           | BMEM.bram.RAMB18E1   |
+    | threshold_read_reg_659_reg[1]                                                                                                                                 | FLOP_LATCH.flop.FDRE |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981[0]_i_18                                                                                            | LUT.others.LUT2      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]_i_11                                                                                        | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981[0]_i_8       | LUT.others.LUT4      |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U/dark_cont_30_reg_9981_reg[0]_i_1   | CARRY.others.CARRY4  |
+    | grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_30_reg_9981_reg[0]                                                                                             | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-----------------------------------------------------------------+
+| Report Type              | Report Location                                                 |
++--------------------------+-----------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/fast_ip_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/fast_ip_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/fast_ip_power_routed.rpt                    |
+| status                   | impl/verilog/report/fast_ip_status_routed.rpt                   |
+| timing                   | impl/verilog/report/fast_ip_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/fast_ip_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/fast_ip_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/fast_ip_utilization_hierarchical_routed.rpt |
++--------------------------+-----------------------------------------------------------------+
+
+

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Feb  9 15:23:24 2025
+# Process ID         : 24376
+# Current directory  : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/ip/vivado.log
+# Journal file       : C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/impl/ip\vivado.jou
+# Running On         : Ariqfadhh
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 21168 MB
+# Swap memory        : 3517 MB
+# Total Virtual      : 24686 MB
+# Available Virtual  : 7373 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

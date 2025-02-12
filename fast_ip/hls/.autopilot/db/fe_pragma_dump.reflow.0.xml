@@ -1,0 +1,48 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<1>(ap_uint<1> const&)" off="0" region="0" recursive="0"/>
+<pragma file="fast_ip.cpp" line="28" pragmaType="loop_flatten" parentfunction="fast_ip" off="1"/>
+<pragma file="fast_ip.cpp" line="30" pragmaType="pipeline" parentfunction="fast_ip" off="0" ii="1" rewind="0" style=""/>
+<pragma file="fast_ip.cpp" line="37" pragmaType="unroll" parentfunction="fast_ip" factor="-1" skip_exit_check="0"/>
+<pragma file="fast_ip.cpp" line="44" pragmaType="unroll" parentfunction="fast_ip" factor="-1" skip_exit_check="0"/>
+<pragma file="fast_ip.cpp" line="62" pragmaType="unroll" parentfunction="fast_ip" factor="-1" skip_exit_check="0"/>
+<pragma file="fast_ip.cpp" line="70" pragmaType="unroll" parentfunction="fast_ip" factor="-1" skip_exit_check="0"/>
+<pragma file="fast_ip.cpp" line="74" pragmaType="unroll" parentfunction="fast_ip" factor="-1" skip_exit_check="0"/>
+<pragma file="fast_ip.cpp" line="11" pragmaType="interface" parentfunction="fast_ip" mode="axis" port="src_axi" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="fast_ip.cpp" line="12" pragmaType="interface" parentfunction="fast_ip" mode="axis" port="dst_axi" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="fast_ip.cpp" line="13" pragmaType="interface" parentfunction="fast_ip" mode="s_axilite" port="img_width" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fast_ip.cpp" line="14" pragmaType="interface" parentfunction="fast_ip" mode="s_axilite" port="img_height" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fast_ip.cpp" line="15" pragmaType="interface" parentfunction="fast_ip" mode="s_axilite" port="threshold" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fast_ip.cpp" line="16" pragmaType="interface" parentfunction="fast_ip" mode="s_axilite" port="" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="fast_ip.cpp" line="20" pragmaType="array_partition" parentfunction="fast_ip" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_iihE8line_buf"/>
+<pragma file="fast_ip.cpp" line="21" pragmaType="array_partition" parentfunction="fast_ip" dim="2" factor="16" mode="cyclic" dynamic="0" variable="_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_iihE8line_buf"/>
+<pragma file="fast_ip.cpp" line="25" pragmaType="array_partition" parentfunction="fast_ip" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_iihE12circle_cache"/>
+<pragma file="fast_ip.cpp" line="58" pragmaType="array_partition" parentfunction="fast_ip" dim="1" factor="0" mode="complete" dynamic="0" variable="brighter"/>
+<pragma file="fast_ip.cpp" line="59" pragmaType="array_partition" parentfunction="fast_ip" dim="1" factor="0" mode="complete" dynamic="0" variable="darker"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_data_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_keep_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<4, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<4>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_last_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi4ELb0EEC2EDq4_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(bool)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_strb_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+</pragmas>

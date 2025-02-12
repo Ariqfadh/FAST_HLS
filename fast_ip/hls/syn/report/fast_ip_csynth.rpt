@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'fast_ip'
+================================================================
+* Date:           Sun Feb  9 15:19:27 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        fast_ip
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.158 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------+---------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |                                      |                           |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+        |               Instance               |           Module          |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+        +--------------------------------------+---------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+        |grp_fast_ip_Pipeline_col_loop_fu_328  |fast_ip_Pipeline_col_loop  |        ?|        ?|         ?|         ?|    0|    0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +--------------------------------------+---------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- row_loop  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    353|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|    2767|   6845|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     91|    -|
+|Register         |        -|    -|     314|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    3081|   7289|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       2|     13|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------+---------------------------+---------+----+------+------+-----+
+    |               Instance               |           Module          | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +--------------------------------------+---------------------------+---------+----+------+------+-----+
+    |CONTROL_BUS_s_axi_U                   |CONTROL_BUS_s_axi          |        0|   0|   126|   184|    0|
+    |grp_fast_ip_Pipeline_col_loop_fu_328  |fast_ip_Pipeline_col_loop  |        0|   0|  2641|  6661|    0|
+    +--------------------------------------+---------------------------+---------+----+------+------+-----+
+    |Total                                 |                           |        0|   0|  2767|  6845|    0|
+    +--------------------------------------+---------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------------------+----------+----+---+----+------------+------------+
+    |                    Variable Name                    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------------+----------+----+---+----+------------+------------+
+    |sub120_fu_585_p2                                     |         +|   0|  0|  39|          32|           2|
+    |sub122_fu_597_p2                                     |         +|   0|  0|  39|          32|           2|
+    |sub23_fu_591_p2                                      |         +|   0|  0|  39|          32|           3|
+    |sub_fu_579_p2                                        |         +|   0|  0|  39|          32|           3|
+    |y_2_fu_620_p2                                        |         +|   0|  0|  38|          31|           1|
+    |grp_fast_ip_Pipeline_col_loop_fu_328_dst_axi_TREADY  |       and|   0|  0|   2|           1|           1|
+    |cmp123_fu_637_p2                                     |      icmp|   0|  0|  39|          32|          32|
+    |cmp21_fu_626_p2                                      |      icmp|   0|  0|  38|          31|           2|
+    |icmp_ln27_fu_615_p2                                  |      icmp|   0|  0|  39|          32|          32|
+    |slt_fu_632_p2                                        |      icmp|   0|  0|  39|          32|          32|
+    |rev_fu_642_p2                                        |       xor|   0|  0|   2|           1|           2|
+    +-----------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                |          |   0|  0| 353|         288|         112|
+    +-----------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  37|          7|    1|          7|
+    |dst_axi_TDATA_int_regslice   |   9|          2|   32|         64|
+    |dst_axi_TKEEP_int_regslice   |   9|          2|    4|          8|
+    |dst_axi_TLAST_int_regslice   |   9|          2|    1|          2|
+    |dst_axi_TSTRB_int_regslice   |   9|          2|    4|          8|
+    |src_axi_TREADY_int_regslice  |   9|          2|    1|          2|
+    |y_fu_306                     |   9|          2|   31|         62|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  91|         19|   74|        153|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------+----+----+-----+-----------+
+    |                        Name                       | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                          |   6|   0|    6|          0|
+    |cmp123_reg_712                                     |   1|   0|    1|          0|
+    |cmp21_reg_702                                      |   1|   0|    1|          0|
+    |dst_axi_TDATA_reg                                  |  32|   0|   32|          0|
+    |dst_axi_TKEEP_reg                                  |   4|   0|    4|          0|
+    |dst_axi_TLAST_reg                                  |   1|   0|    1|          0|
+    |dst_axi_TSTRB_reg                                  |   4|   0|    4|          0|
+    |grp_fast_ip_Pipeline_col_loop_fu_328_ap_start_reg  |   1|   0|    1|          0|
+    |img_height_read_reg_664                            |  32|   0|   32|          0|
+    |img_width_read_reg_669                             |  32|   0|   32|          0|
+    |rev_reg_717                                        |   1|   0|    1|          0|
+    |slt_reg_707                                        |   1|   0|    1|          0|
+    |sub120_reg_679                                     |  32|   0|   32|          0|
+    |sub122_reg_689                                     |  32|   0|   32|          0|
+    |sub23_reg_684                                      |  32|   0|   32|          0|
+    |sub_reg_674                                        |  32|   0|   32|          0|
+    |threshold_read_reg_659                             |   8|   0|    8|          0|
+    |y_2_reg_697                                        |  31|   0|   31|          0|
+    |y_fu_306                                           |  31|   0|   31|          0|
+    +---------------------------------------------------+----+----+-----+-----------+
+    |Total                                              | 314|   0|  314|          0|
+    +---------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++---------------------------+-----+-----+------------+------------------+--------------+
+|s_axi_CONTROL_BUS_AWVALID  |   in|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_AWREADY  |  out|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_AWADDR   |   in|    6|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_WVALID   |   in|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_WREADY   |  out|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_WDATA    |   in|   32|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_WSTRB    |   in|    4|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_ARVALID  |   in|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_ARREADY  |  out|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_ARADDR   |   in|    6|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_RVALID   |  out|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_RREADY   |   in|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_RDATA    |  out|   32|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_RRESP    |  out|    2|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_BVALID   |  out|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_BREADY   |   in|    1|       s_axi|       CONTROL_BUS|        scalar|
+|s_axi_CONTROL_BUS_BRESP    |  out|    2|       s_axi|       CONTROL_BUS|        scalar|
+|ap_clk                     |   in|    1|  ap_ctrl_hs|           fast_ip|  return value|
+|ap_rst_n                   |   in|    1|  ap_ctrl_hs|           fast_ip|  return value|
+|interrupt                  |  out|    1|  ap_ctrl_hs|           fast_ip|  return value|
+|src_axi_TDATA              |   in|   32|        axis|  src_axi_V_data_V|       pointer|
+|src_axi_TVALID             |   in|    1|        axis|  src_axi_V_last_V|       pointer|
+|src_axi_TREADY             |  out|    1|        axis|  src_axi_V_last_V|       pointer|
+|src_axi_TLAST              |   in|    1|        axis|  src_axi_V_last_V|       pointer|
+|src_axi_TKEEP              |   in|    4|        axis|  src_axi_V_keep_V|       pointer|
+|src_axi_TSTRB              |   in|    4|        axis|  src_axi_V_strb_V|       pointer|
+|dst_axi_TDATA              |  out|   32|        axis|  dst_axi_V_data_V|       pointer|
+|dst_axi_TVALID             |  out|    1|        axis|  dst_axi_V_last_V|       pointer|
+|dst_axi_TREADY             |   in|    1|        axis|  dst_axi_V_last_V|       pointer|
+|dst_axi_TLAST              |  out|    1|        axis|  dst_axi_V_last_V|       pointer|
+|dst_axi_TKEEP              |  out|    4|        axis|  dst_axi_V_keep_V|       pointer|
+|dst_axi_TSTRB              |  out|    4|        axis|  dst_axi_V_strb_V|       pointer|
++---------------------------+-----+-----+------------+------------------+--------------+
+

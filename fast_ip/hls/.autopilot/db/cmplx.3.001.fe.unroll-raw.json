@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 75,
+    "calls": "",
+    "file": "fast_ip.cpp",
+    "fileloc": 3,
+    "instructions": 1553,
+    "loads": {
+      "G": 39,
+      "L": 385
+    },
+    "name": "fast_ip",
+    "stores": {
+      "G": 23,
+      "L": 34
+    },
+    "total_instructions": 1553
+  }
+}

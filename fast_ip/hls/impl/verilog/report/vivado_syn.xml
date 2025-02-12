@@ -1,0 +1,466 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.299</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.299</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>6.299</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.701</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>3.701</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.701</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>3.701</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>112</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>657</FF>
+    <LATCH>0</LATCH>
+    <LUT>1642</LUT>
+    <SRL>4</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="fast_ip" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="7">CONTROL_BUS_s_axi_U grp_fast_ip_Pipeline_col_loop_fu_328 regslice_both_dst_axi_V_data_V_U regslice_both_dst_axi_V_keep_V_U regslice_both_dst_axi_V_last_V_U regslice_both_dst_axi_V_strb_V_U regslice_both_src_axi_V_data_V_U</SubModules>
+    <Resources BRAM="112" FF="657" LUT="1642" LogicLUT="1638" RAMB18="112" SRL="4"/>
+    <LocalResources FF="275" LUT="37" LogicLUT="37"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CONTROL_BUS_s_axi_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_CONTROL_BUS_s_axi">
+    <Resources FF="125" LUT="224" LogicLUT="224"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop">
+    <SubModules count="113">flow_control_loop_pipe_sequential_init_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_111_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_112_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_113_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_114_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_115_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_116_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_117_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_118_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_119_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_120_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_121_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_122_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_48_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_49_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_50_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_51_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_52_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_53_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_54_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_55_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_56_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_57_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_58_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_59_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_60_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_61_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_64_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_65_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_66_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_67_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_68_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_69_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_70_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_71_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_72_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_73_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_74_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_75_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_76_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_77_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_78_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_79_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_81_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_82_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_84_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_85_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_86_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_87_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_88_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_89_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_91_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_92_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_95_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_96_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_97_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_98_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_99_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U</SubModules>
+    <Resources BRAM="112" FF="214" LUT="1328" LogicLUT="1324" RAMB18="112" SRL="4"/>
+    <LocalResources FF="212" LUT="71" LogicLUT="67" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="134" LogicLUT="134"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_10_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_111_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_112_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_113_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_114_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_115_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_116_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_117_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_118_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="10" LogicLUT="10" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_119_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_11_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_120_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="18" LogicLUT="18" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_121_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="26" LogicLUT="26" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_122_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_12_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_13_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_14_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="15" LogicLUT="15" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_15_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_17_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_18_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_1_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_20_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_21_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_22_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_23_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_24_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_25_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_27_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_28_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_2_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="21" LogicLUT="21" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="24" LogicLUT="24" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_31_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_32_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_33_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_34_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_35_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_36_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_37_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_38_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_39_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_3_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_40_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_41_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_42_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_43_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_44_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_45_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_46_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_47_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_48_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_49_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_4_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="15" LogicLUT="15" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_50_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_51_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_52_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_53_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_54_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_55_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_56_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_57_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_58_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_59_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_5_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_60_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_61_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_62_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_63_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="16" LogicLUT="16" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_64_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_65_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_66_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_67_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_68_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_69_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_6_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="21" LogicLUT="21" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_70_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_71_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_72_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="20" LogicLUT="20" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_73_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_74_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_75_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_76_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_77_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_78_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_79_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_7_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_81_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_82_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_84_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_85_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_86_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_87_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_88_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="18" LogicLUT="18" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_89_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_8_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="25" LogicLUT="25" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_91_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_92_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="33" LogicLUT="33" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_95_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="13" LogicLUT="13" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_96_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="8" LogicLUT="8" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_97_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_98_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_99_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbJp">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_9_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="17" LogicLUT="17" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_U" DEPTH="2" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" ORIG_REF_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb">
+    <Resources BRAM="1" LUT="9" LogicLUT="9" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_dst_axi_V_data_V_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_regslice_both">
+    <Resources FF="7" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_dst_axi_V_keep_V_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_regslice_both">
+    <Resources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_dst_axi_V_last_V_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_regslice_both">
+    <Resources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_dst_axi_V_strb_V_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_regslice_both">
+    <Resources FF="5" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/regslice_both_src_axi_V_data_V_U" DEPTH="1" FILE_NAME="fast_ip.v" ORIG_REF_NAME="fast_ip_regslice_both">
+    <Resources FF="21" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.065" DATAPATH_LOGIC_DELAY="3.426" DATAPATH_NET_DELAY="2.639" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_12_reg_9783_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="3.701" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/bright_cont_12_reg_9772[0]_i_43" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/bright_cont_12_reg_9772[0]_i_16" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_sparsemux_33_4_8_1_1.v" LINE_NUMBER="127"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/dark_cont_12_reg_9783[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9978"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/dark_cont_12_reg_9783_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_12_reg_9783_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="4898"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.065" DATAPATH_LOGIC_DELAY="3.426" DATAPATH_NET_DELAY="2.639" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_20_reg_9871_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="3.701" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U/ram_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_83_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_80_U/bright_cont_12_reg_9772[0]_i_44" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/bright_cont_20_reg_9860[0]_i_16" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_sparsemux_33_4_8_1_1.v" LINE_NUMBER="127"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/dark_cont_20_reg_9871[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9996"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/dark_cont_20_reg_9871_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_20_reg_9871_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="4902"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.065" DATAPATH_LOGIC_DELAY="3.426" DATAPATH_NET_DELAY="2.639" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_28_reg_9959_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="3.701" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_19_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_16_U/bright_cont_4_reg_9684[0]_i_44" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/dark_cont_28_reg_9959[0]_i_16" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_sparsemux_33_4_8_1_1.v" LINE_NUMBER="127"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/dark_cont_28_reg_9959[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="10012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/dark_cont_28_reg_9959_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_28_reg_9959_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="4906"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.065" DATAPATH_LOGIC_DELAY="3.426" DATAPATH_NET_DELAY="2.639" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_4_reg_9695_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="3.701" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_29_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_26_U/bright_cont_4_reg_9684[0]_i_43" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/bright_cont_4_reg_9684[0]_i_16" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_sparsemux_33_4_8_1_1.v" LINE_NUMBER="127"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/dark_cont_4_reg_9695[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="10024"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_30_U/dark_cont_4_reg_9695_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/dark_cont_4_reg_9695_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="4909"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.926" DATAPATH_LOGIC_DELAY="3.287" DATAPATH_NET_DELAY="2.639" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_12_reg_9772_reg[0]/D" LOGIC_LEVELS="4" MAX_FANOUT="4" SLACK="3.840" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg/CLKARDCLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_93_U/ram_reg" PRIMITIVE_TYPE="BMEM.bram.RAMB18E1" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop_p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELbkb.v" LINE_NUMBER="54"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_90_U/bright_cont_12_reg_9772[0]_i_31" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/bright_cont_12_reg_9772[0]_i_13" PRIMITIVE_TYPE="LUT.others.LUT6" FILE_NAME="fast_ip_sparsemux_33_4_8_1_1.v" LINE_NUMBER="127"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/bright_cont_12_reg_9772[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9912"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/p_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES6_94_U/bright_cont_12_reg_9772_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="9908"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_fast_ip_Pipeline_col_loop_fu_328/bright_cont_12_reg_9772_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="fast_ip_fast_ip_Pipeline_col_loop.v" LINE_NUMBER="4881"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/fast_ip_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/fast_ip_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/fast_ip_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/fast_ip_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/fast_ip_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/fast_ip_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fast_ip_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

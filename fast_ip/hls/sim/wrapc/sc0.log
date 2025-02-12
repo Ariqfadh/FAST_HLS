@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_fast_ip.cpp
+   Compiling apatb_fast_ip_util.cpp
+   Compiling fast_ip.cpp_pre.cpp.tb.cpp
+   Compiling fast_ip_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fast_ip_ir.ll
+   Generating cosim.tv.exe

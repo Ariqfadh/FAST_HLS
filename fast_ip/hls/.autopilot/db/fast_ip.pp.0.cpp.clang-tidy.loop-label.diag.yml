@@ -1,0 +1,85 @@
+---
+MainSourceFile:  'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/.autopilot/db/fast_ip.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          279863
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          280329
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          280796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          564154
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_1:  '
+    FileOffset:      36
+    FilePath:        fast_ip.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          1057606
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_2:  '
+    FileOffset:      43
+    FilePath:        fast_ip.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          1057836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_3:  '
+    FileOffset:      61
+    FilePath:        fast_ip.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          1058521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_4:  '
+    FileOffset:      69
+    FilePath:        fast_ip.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          1058789
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_5:  '
+    FileOffset:      73
+    FilePath:        fast_ip.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\ariqf\Kuliah\KP\Workspace\fast_ip\fast_ip\hls\.autopilot\db\fast_ip.pp.0.cpp'
+        Offset:          1058928
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_5: '
+...

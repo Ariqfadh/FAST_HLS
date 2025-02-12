@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=fast_ip",
+      "-c",
+      "C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.cpp"
+    ],
+    "file": "C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ariqf\\Kuliah\\KP\\Workspace\\fast_ip",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip_tb.cpp"
+    ],
+    "file": "C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip_tb.cpp"
+  }
+]

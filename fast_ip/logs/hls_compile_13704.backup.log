@@ -1,0 +1,123 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.cpp' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.h' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip_tb.cpp' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=fast_ip' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg484-1' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.864 seconds; current allocated memory: 162.750 MB.
+INFO: [HLS 200-10] Analyzing design file 'fast_ip.cpp' ... 
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (fast_ip.cpp:19:23)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables (fast_ip.cpp:21:23)
+Resolution: For help on HLS 214-111 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-111.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (fast_ip.cpp:16:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file fast_ip.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.147 seconds; current allocated memory: 165.875 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 414 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,555 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,630 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,623 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,623 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,720 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,618 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,618 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,618 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,658 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,647 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,579 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,545 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,545 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,492 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,514 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/ariqf/Kuliah/KP/Workspace/fast_ip/fast_ip/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_1' is marked as complete unroll implied by the pipeline pragma (fast_ip.cpp:36:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_38_2' is marked as complete unroll implied by the pipeline pragma (fast_ip.cpp:38:19)
+INFO: [HLS 214-291] Loop 'circle_check' is marked as complete unroll implied by the pipeline pragma (fast_ip.cpp:57:16)
+INFO: [HLS 214-291] Loop 'contiguous_check' is marked as complete unroll implied by the pipeline pragma (fast_ip.cpp:68:35)
+INFO: [HLS 214-291] Loop 'sequence_check' is marked as complete unroll implied by the pipeline pragma (fast_ip.cpp:73:37)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_1' (fast_ip.cpp:36:30) in function 'fast_ip' completely with a factor of 6 (fast_ip.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_2' (fast_ip.cpp:38:19) in function 'fast_ip' completely with a factor of 1920 (fast_ip.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'circle_check' (fast_ip.cpp:57:16) in function 'fast_ip' completely with a factor of 16 (fast_ip.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'contiguous_check' (fast_ip.cpp:68:35) in function 'fast_ip' completely with a factor of 16 (fast_ip.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'sequence_check' (fast_ip.cpp:73:37) in function 'fast_ip' completely with a factor of 12 (fast_ip.cpp:9:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ7fast_ipRN3hls6streamINS_4axisI7ap_uintILi8EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS1_IS2_ILi1EELm1ELm1ELm1ELh56ELb0EEELi0EEEiihE8line_buf': Complete partitioning on dimension 1. (fast_ip.cpp:19:0)
+INFO: [HLS 214-455] Changing loop 'Loop_row_loop_proc' (fast_ip.cpp:25:12) to a process function for dataflow in function 'fast_ip' (fast_ip.cpp:25:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1301.35 seconds; current allocated memory: 167.816 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 167.816 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 30 seconds. CPU system time: 0 seconds. Elapsed time: 59.782 seconds; current allocated memory: 199.133 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 38 seconds. CPU system time: 0 seconds. Elapsed time: 113.841 seconds; current allocated memory: 265.172 MB.
+INFO: [XFORM 203-712] Applying dataflow to function 'fast_ip' (fast_ip.cpp:0:1), detected/extracted 3 process function(s): 
+	 'entry_proc'
+	 'Block_entry_proc'
+	 'Loop_row_loop_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fast_ip.cpp:26:37) to (fast_ip.cpp:26:19) in function 'Loop_row_loop_proc'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Loop_row_loop_proc' (fast_ip.cpp:25:38)...194 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 45 seconds. CPU system time: 0 seconds. Elapsed time: 104.934 seconds; current allocated memory: 285.309 MB.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process Loop_row_loop_proc has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 806 seconds. CPU system time: 148 seconds. Elapsed time: 2854.32 seconds; current allocated memory: 13.833 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fast_ip' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 158 seconds. CPU system time: 1 seconds. Elapsed time: 382.158 seconds; current allocated memory: 13.833 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 13.833 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 13.833 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 13.833 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_row_loop_proc_Pipeline_col_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'col_loop'.
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_load_1', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_3', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_5', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_7', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_259', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 130). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_385', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 193). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_449', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 225). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_481', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 241). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'Loop_row_loop_proc_Pipeline_col_loop' (loop 'col_loop'): Unable to schedule 'load' operation 8 bit ('fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2_load_497', fast_ip.cpp:39->fast_ip.cpp:25->fast_ip.cpp:25) on array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2' due to limited memory ports (II = 249). Please consider using a memory core with more ports or partitioning the array 'fast_ip_stream_stream_axis_0_int_int_unsigned_char_line_buf_2'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-885.html

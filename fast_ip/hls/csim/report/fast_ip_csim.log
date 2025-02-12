@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../fast_ip_tb.cpp in debug mode
+   Compiling ../../../../fast_ip.cpp in debug mode
+   Generating csim.exe
+Found 64834 corners
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 307200
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
