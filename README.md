@@ -45,9 +45,3 @@ This research focuses on developing a low-power hardware accelerator for FAST ke
 - Explore further power optimizations and hardware-software co-design strategies.
 - Implement multi-core or parallel processing enhancements for increased throughput.
 
-## References
-(Include relevant research papers, FPGA documentation, and tool references here.)
-
----
-This README serves as a high-level summary of the research. For detailed implementation, refer to the project repository and technical documentation.
-
